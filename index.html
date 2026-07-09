@@ -1,1 +1,189 @@
-<span>This is a test</span>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gosin</title>
+<meta name="description" content="Gosin — software engineer, backend and systems. Starting 有间 / Yǒujiān: quiet digital tools that accomplish, then recede.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='0' y='13' font-size='13'%3E%F0%9F%A6%86%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --ink: #20242b;
+    --muted: #68707d;
+    --accent: #2f5f9f;
+    --rule: #d8dce2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181c;
+      --ink: #d3d7dd;
+      --muted: #868e99;
+      --accent: #8fb6e8;
+      --rule: #2c3038;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.7 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  }
+  [lang="zh"] {
+    font-family: "Songti SC", "Noto Serif SC", STSong, serif;
+  }
+  main {
+    max-width: 36rem;
+    padding: 0 1.5rem 5rem;
+    margin: 14vh auto 0;
+  }
+  header {
+    margin-bottom: 2.5rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    margin: 0;
+  }
+  .role {
+    margin: 0.35rem 0 0;
+    color: var(--muted);
+  }
+  section {
+    margin-top: 3rem;
+  }
+  h2 {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-top: 1px solid var(--rule);
+    padding-top: 1rem;
+    margin: 0 0 1rem;
+  }
+  p { margin: 0 0 1rem; }
+  p:last-child { margin-bottom: 0; }
+  .quiet { color: var(--muted); }
+  .motto {
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid var(--accent);
+  }
+  .motto [lang="zh"] {
+    display: block;
+    font-size: 1.05rem;
+  }
+  .motto .en {
+    display: block;
+    font-style: italic;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  .values {
+    display: flex;
+    gap: 2.5rem;
+    margin: 1.75rem 0 0.5rem;
+    padding: 0;
+    list-style: none;
+  }
+  .values [lang="zh"] {
+    display: block;
+    font-size: 1.25rem;
+  }
+  .values small {
+    display: block;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    margin-top: 0.2rem;
+  }
+  ul.links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.85rem;
+  }
+  ul.links li { margin: 0.4rem 0; }
+  a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent);
+    text-underline-offset: 3px;
+  }
+  a:hover { text-decoration-color: var(--accent); }
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+  footer {
+    margin-top: 4rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.72rem;
+    color: var(--muted);
+  }
+  @media (max-width: 520px) {
+    main { margin-top: 8vh; }
+    .values { gap: 1.5rem; flex-wrap: wrap; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Gosin</h1>
+    <p class="role">Software engineer &mdash; backend and systems.</p>
+  </header>
+
+  <p>I build the load-bearing middles of systems: data pipelines,
+     integrations, internal tooling.</p>
+
+  <section>
+    <h2><span lang="zh">有间</span> &middot; Yǒujiān</h2>
+    <p>I&rsquo;m starting <a href="https://youjian.dev">Yǒujiān</a>, a software
+       venture named for an idea in the Zhuangzi: complex structures have
+       natural openings &mdash; <span lang="zh">间</span> &mdash; and good work
+       enters through them rather than by force.</p>
+    <p>Its first product, <strong>Soloist</strong>, is studio management for
+       independent music teachers, built on one idea: the teacher&rsquo;s own
+       calendar is the source of truth. Not released yet.</p>
+    <blockquote class="motto">
+      <span lang="zh">良器无名，成事而退。</span>
+      <span class="en">The finest tools go unnamed; they accomplish, and they recede.</span>
+    </blockquote>
+    <ul class="values">
+      <li><span lang="zh">成事</span><small>accomplish</small></li>
+      <li><span lang="zh">安心</span><small>peace of mind</small></li>
+      <li><span lang="zh">留余</span><small>leave room</small></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Otherwise</h2>
+    <p>Classical Chinese literature and aesthetics, which shape how I think
+       about software: restraint, sufficiency, knowing when a thing is done.
+       Woodworking, photography, cars, and collecting physical books in two
+       languages. Splatoon, when the ink calls.</p>
+    <p>At home: a wife and a two-year-old daughter, who outrank everything
+       above.</p>
+  </section>
+
+  <section>
+    <h2>Elsewhere</h2>
+    <ul class="links">
+      <li><a href="https://youjian.dev">youjian.dev</a></li>
+      <li><a href="https://github.com/Gosin">github.com/Gosin</a></li>
+    </ul>
+  </section>
+
+  <footer>gosin.dev</footer>
+</main>
+</body>
+</html>
